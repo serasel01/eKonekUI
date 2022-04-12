@@ -4,7 +4,6 @@ import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.models.Case;
 import com.example.barangayservicesui.models.Resident;
 import com.example.barangayservicesui.utils.Admin;
-import com.example.barangayservicesui.utils.LoaderUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
