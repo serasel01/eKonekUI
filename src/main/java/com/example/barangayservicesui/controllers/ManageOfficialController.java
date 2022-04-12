@@ -1,9 +1,9 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.enums.OfficialFilterParameter;
-import com.example.BarangayServicesclient.models.Official;
+import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.Main;
+import com.example.barangayservicesui.enums.OfficialFilterParameter;
+import com.example.barangayservicesui.models.Official;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.LoaderUtil;
 import javafx.event.ActionEvent;

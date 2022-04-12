@@ -1,10 +1,10 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.models.Official;
-import com.example.BarangayServicesclient.models.Resident;
+import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.enums.Barangay;
 import com.example.barangayservicesui.enums.LogEvent;
+import com.example.barangayservicesui.models.Official;
+import com.example.barangayservicesui.models.Resident;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.LoaderUtil;
 import javafx.event.ActionEvent;

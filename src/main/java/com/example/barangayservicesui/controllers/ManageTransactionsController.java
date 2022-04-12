@@ -1,8 +1,8 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.enums.TransactionFilter;
-import com.example.BarangayServicesclient.models.Transaction;
+import com.example.barangayservicesui.DatabaseFacade;
+import com.example.barangayservicesui.enums.TransactionFilter;
+import com.example.barangayservicesui.models.Transaction;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.LoaderUtil;
 import javafx.collections.FXCollections;

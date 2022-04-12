@@ -1,6 +1,7 @@
 package com.example.barangayservicesui.certificates;
 
-import com.example.BarangayServicesclient.models.Resident;
+import com.example.barangayservicesui.models.Resident;
+
 import java.time.LocalDate;
 
 public class CertificateFactory {

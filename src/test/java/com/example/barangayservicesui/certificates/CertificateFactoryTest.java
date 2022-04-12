@@ -1,7 +1,5 @@
 package com.example.barangayservicesui.certificates;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.models.Resident;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

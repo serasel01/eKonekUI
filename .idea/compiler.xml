@@ -8,13 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BarangayServices-ui" />
-        <module name="BarangayServices-client" />
+        <module name="eKonekUI" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BarangayServices-client" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BarangayServices-client" options="-parameters" />
+      <module name="eKonekUI" options="-parameters" />
     </option>
   </component>
 </project>

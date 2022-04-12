@@ -1,12 +1,12 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.models.Resident;
-import com.example.BarangayServicesclient.models.Transaction;
+import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.certificates.Certificate;
 import com.example.barangayservicesui.certificates.CertificateFactory;
 import com.example.barangayservicesui.enums.LogEvent;
 import com.example.barangayservicesui.enums.Pane;
+import com.example.barangayservicesui.models.Resident;
+import com.example.barangayservicesui.models.Transaction;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.AlertManager;
 import com.example.barangayservicesui.utils.LoaderUtil;

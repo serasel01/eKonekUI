@@ -1,10 +1,10 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.enums.SystemEventFilter;
-import com.example.BarangayServicesclient.models.SystemEvent;
-import com.example.BarangayServicesclient.models.Transaction;
+import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.enums.LogEvent;
+import com.example.barangayservicesui.enums.SystemEventFilter;
+import com.example.barangayservicesui.models.SystemEvent;
+import com.example.barangayservicesui.models.Transaction;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

@@ -1,7 +1,5 @@
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.Logging;
-import com.example.BarangayServicesclient.enums.ResidentFilterParameter;
-import com.example.BarangayServicesclient.models.Resident;
+
+import com.example.barangayservicesui.Logging;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.TextFileReader;
 import com.spire.doc.Document;

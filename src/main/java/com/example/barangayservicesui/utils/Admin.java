@@ -1,13 +1,13 @@
 package com.example.barangayservicesui.utils;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.enums.ResidentFilterParameter;
-import com.example.BarangayServicesclient.models.Case;
-import com.example.BarangayServicesclient.models.Official;
-import com.example.BarangayServicesclient.models.Resident;
-import com.example.BarangayServicesclient.models.SystemEvent;
+import com.example.barangayservicesui.DatabaseFacade;
 import com.example.barangayservicesui.enums.Barangay;
 import com.example.barangayservicesui.enums.LogEvent;
+import com.example.barangayservicesui.enums.ResidentFilterParameter;
+import com.example.barangayservicesui.models.Case;
+import com.example.barangayservicesui.models.Official;
+import com.example.barangayservicesui.models.Resident;
+import com.example.barangayservicesui.models.SystemEvent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.time.LocalDate;

@@ -1,11 +1,11 @@
 package com.example.barangayservicesui.utils;
 
-import com.example.BarangayServicesclient.models.Official;
-import com.example.BarangayServicesclient.models.Resident;
-import com.example.BarangayServicesclient.models.Transaction;
 import com.example.barangayservicesui.Main;
 import com.example.barangayservicesui.controllers.*;
 import com.example.barangayservicesui.enums.Pane;
+import com.example.barangayservicesui.models.Official;
+import com.example.barangayservicesui.models.Resident;
+import com.example.barangayservicesui.models.Transaction;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Dialog;

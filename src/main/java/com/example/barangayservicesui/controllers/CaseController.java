@@ -1,9 +1,8 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.DatabaseFacade;
-import com.example.BarangayServicesclient.models.Case;
-import com.example.BarangayServicesclient.models.Resident;
-import com.example.BarangayServicesclient.models.Transaction;
+import com.example.barangayservicesui.DatabaseFacade;
+import com.example.barangayservicesui.models.Case;
+import com.example.barangayservicesui.models.Resident;
 import com.example.barangayservicesui.utils.Admin;
 import com.example.barangayservicesui.utils.LoaderUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;

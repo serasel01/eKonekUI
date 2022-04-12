@@ -1,8 +1,8 @@
 package com.example.barangayservicesui.controllers;
 
-import com.example.BarangayServicesclient.enums.ResidentFilterParameter;
-import com.example.BarangayServicesclient.models.Resident;
 import com.example.barangayservicesui.Main;
+import com.example.barangayservicesui.enums.ResidentFilterParameter;
+import com.example.barangayservicesui.models.Resident;
 import com.example.barangayservicesui.utils.Admin;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
