@@ -56,6 +56,8 @@ public class LoginController {
 
     @FXML
     void loginAdmin(ActionEvent event) throws IOException {
+        userRFID = tfRfid.getText();
+        txtMessage.setText("Logging in. Please wait.");
         if (!isInputEmpty()){
             authenticateUser();
         }
@@ -77,6 +79,8 @@ public class LoginController {
 
     @FXML
     void loginByEnter(KeyEvent event) throws IOException {
+        userRFID = tfRfid.getText();
+        txtMessage.setText("Logging in. Please wait.");
         if (event.getCode().equals(KeyCode.ENTER)){
             if (!isInputEmpty()){
                 authenticateUser();
