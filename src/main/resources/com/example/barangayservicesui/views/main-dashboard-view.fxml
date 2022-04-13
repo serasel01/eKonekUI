@@ -63,7 +63,7 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnResidents" mnemonicParsing="false" onAction="#switchToResidents" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #ffffff;" text="Manage Residents" textFill="#0d47a1">
+                  <Button fx:id="btnResidents" mnemonicParsing="false" onAction="#switchToResidents" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #0d47a1;" text="Manage Residents" textFill="WHITE">
                      <font>
                         <Font size="24.0" />
                      </font>

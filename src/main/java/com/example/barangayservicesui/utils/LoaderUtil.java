@@ -9,6 +9,7 @@ import com.example.barangayservicesui.models.Transaction;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Dialog;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -154,6 +155,20 @@ public class LoaderUtil{
 
         CameraController cameraController = loader.getController();
         cameraController.setData(userRFID, dialog, profileController);
+
+        dialog.show();
+    }
+
+    public void loadScanner(TextField textField) throws IOException {
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("views/scanner-view.fxml"));
+
+        Dialog<Boolean> dialog = new Dialog<>();
+        dialog.getDialogPane().getChildren().add(loader.load());
+        dialog.setResizable(true);
+        dialog.getDialogPane().setMinSize(525, 525);
+
+        QRScannerController scannerController = loader.getController();
+        scannerController.start(textField, dialog);
 
         dialog.show();
     }

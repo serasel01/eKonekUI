@@ -16,6 +16,8 @@ module BarangayServices.ui {
     requires java.logging;
     requires spring.webflux;
     requires reactor.core;
+    requires com.google.zxing.javase;
+    requires com.google.zxing;
 
     opens com.example.barangayservicesui to javafx.fxml;
     exports com.example.barangayservicesui;

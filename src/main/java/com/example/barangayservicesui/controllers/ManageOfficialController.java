@@ -36,6 +36,9 @@ public class ManageOfficialController {
     private Button btnSearch;
 
     @FXML
+    private Button btnScanQR;
+
+    @FXML
     private ComboBox<String> cbFilter;
 
     @FXML
@@ -102,6 +105,11 @@ public class ManageOfficialController {
             case "Last Name" -> parameterType = OfficialFilterParameter.LastName;
             case "First Name" -> parameterType = OfficialFilterParameter.FirstName;
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfEntry);
     }
 
     public void start(MainController mainController) {

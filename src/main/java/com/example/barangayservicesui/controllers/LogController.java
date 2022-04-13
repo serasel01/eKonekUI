@@ -5,6 +5,7 @@ import com.example.barangayservicesui.enums.LogEvent;
 import com.example.barangayservicesui.enums.SystemEventFilter;
 import com.example.barangayservicesui.models.SystemEvent;
 import com.example.barangayservicesui.models.Transaction;
+import com.example.barangayservicesui.utils.LoaderUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -14,6 +15,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
 
@@ -25,6 +27,9 @@ public class LogController {
 
     @FXML
     private Button btnSearch;
+
+    @FXML
+    private Button btnScanQR;
 
     @FXML
     private ComboBox<String> cbFilter;
@@ -63,6 +68,11 @@ public class LogController {
         } else { //reset back to default
             onCompleteCancelScan();
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfEntry);
     }
 
     @FXML

@@ -1,7 +1,9 @@
 
 import com.example.barangayservicesui.Logging;
 import com.example.barangayservicesui.utils.Admin;
+import com.example.barangayservicesui.utils.QRReader;
 import com.example.barangayservicesui.utils.TextFileReader;
+import com.google.zxing.WriterException;
 import com.spire.doc.Document;
 import org.junit.jupiter.api.Test;
 
@@ -48,6 +50,11 @@ public class BarangayServicesUITests {
         for (String data : dataList){
             Logging.printInfoLog(data);
         }
+    }
+
+    @Test
+    void generateQR() throws IOException, WriterException {
+        QRReader.outputQR("123456789");
     }
 
 }

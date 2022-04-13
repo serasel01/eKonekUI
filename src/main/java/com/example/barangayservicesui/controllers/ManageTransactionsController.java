@@ -39,6 +39,9 @@ public class ManageTransactionsController {
     private Button btnSearch;
 
     @FXML
+    private Button btnScanQR;
+
+    @FXML
     private ComboBox<String> cbCertificate;
 
     @FXML
@@ -103,6 +106,11 @@ public class ManageTransactionsController {
         } else { //reset back to default
             onCompleteCancelScan();
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfEntry);
     }
 
     @FXML

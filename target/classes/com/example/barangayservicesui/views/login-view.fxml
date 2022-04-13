@@ -63,6 +63,11 @@
                      </children>
                   </HBox>
                   <Text fx:id="txtMessage" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Button fx:id="btnScanQR" mnemonicParsing="false" onAction="#scanQR" prefHeight="26.0" prefWidth="224.0" style="-fx-background-color: #2196f3; -fx-border-radius: 5;" text="Scan via QR Code" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
                   <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="224.0" style="-fx-background-color: #2196f3; -fx-border-radius: 5;" text="Login" textFill="WHITE">
                      <font>
                         <Font size="14.0" />

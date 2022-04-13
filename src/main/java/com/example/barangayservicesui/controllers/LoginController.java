@@ -37,6 +37,9 @@ public class LoginController {
     private Button btnScan;
 
     @FXML
+    private Button btnScanQR;
+
+    @FXML
     private ComboBox<String> cbBarangays;
 
     @FXML
@@ -95,6 +98,11 @@ public class LoginController {
         } else { //reset back to default
             onCompleteCancelScan();
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfRfid);
     }
 
     public void start() throws FileNotFoundException {

@@ -54,6 +54,9 @@ public class TransactionController {
     private Button btnScan;
 
     @FXML
+    private Button btnScanQR;
+
+    @FXML
     private HBox card_ap_holder;
 
     @FXML
@@ -206,6 +209,11 @@ public class TransactionController {
         } else { //reset back to default
             onCompleteCancelScan();
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfRFID);
     }
 
     @FXML

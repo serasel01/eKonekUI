@@ -6,11 +6,9 @@ import com.example.barangayservicesui.enums.*;
 import com.example.barangayservicesui.models.Case;
 import com.example.barangayservicesui.models.Official;
 import com.example.barangayservicesui.models.Resident;
-import com.example.barangayservicesui.utils.AlertManager;
-import com.example.barangayservicesui.utils.LoaderUtil;
-import com.example.barangayservicesui.utils.TextFileReader;
-import com.example.barangayservicesui.utils.Admin;
+import com.example.barangayservicesui.utils.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.google.zxing.WriterException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -50,6 +48,9 @@ public class ProfileController {
 
     @FXML
     private Button btnSettings;
+
+    @FXML
+    private Button btnViewQR;
 
     @FXML
     private ComboBox<String> cbBirthplace;
@@ -179,7 +180,7 @@ public class ProfileController {
 
     @FXML
     void allowEditInfo(ActionEvent event)
-            throws IOException {
+            throws IOException, WriterException {
 
         if (!isEditMode){
             Logging.printInfoLog("toggle edit");
@@ -218,6 +219,8 @@ public class ProfileController {
                 }
 
             }
+
+            QRReader.outputQR(tfRFID.getText());
         }
     }
 
@@ -276,6 +279,11 @@ public class ProfileController {
     void editPicture(ActionEvent event) throws IOException {
         LoaderUtil.getLoaderInstance()
                 .loadCamera(tfRFID.getText(), this);
+    }
+
+    @FXML
+    void viewQR(ActionEvent event) throws IOException, WriterException {
+        QRReader.outputQR(tfRFID.getText());
     }
 
     @FXML

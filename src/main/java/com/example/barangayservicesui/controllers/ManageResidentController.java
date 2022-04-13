@@ -4,6 +4,7 @@ import com.example.barangayservicesui.Main;
 import com.example.barangayservicesui.enums.ResidentFilterParameter;
 import com.example.barangayservicesui.models.Resident;
 import com.example.barangayservicesui.utils.Admin;
+import com.example.barangayservicesui.utils.LoaderUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -35,6 +36,9 @@ public class ManageResidentController {
 
     @FXML
     private Button btnScan;
+
+    @FXML
+    private Button btnScanQR;
 
     @FXML
     private ListView<Node> lvResidents;
@@ -85,6 +89,11 @@ public class ManageResidentController {
         } else { //reset back to default
             onCompleteCancelScan();
         }
+    }
+
+    @FXML
+    void scanQR(ActionEvent event) throws IOException {
+        LoaderUtil.getLoaderInstance().loadScanner(tfEntry);
     }
 
     @FXML
