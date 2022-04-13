@@ -95,12 +95,17 @@
                   </Button>
                         <Button fx:id="btnScan" mnemonicParsing="false" onAction="#scanRFID" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #ffffff;" text="Scan RFID">
                             <VBox.margin>
-                                <Insets />
+                                <Insets top="15.0" />
                             </VBox.margin>
                             <font>
                                 <Font size="18.0" />
                             </font>
                         </Button>
+                  <Button fx:id="btnScanQR" mnemonicParsing="false" onAction="#scanQR" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #ffffff;" text="Scan QR">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
                     </children>
                <HBox.margin>
                   <Insets />

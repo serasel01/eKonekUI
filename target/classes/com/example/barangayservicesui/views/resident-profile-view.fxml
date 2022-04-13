@@ -698,6 +698,11 @@
                         <Font size="14.0" />
                      </font>
                   </Button>
+                  <Button fx:id="btnViewQR" mnemonicParsing="false" onAction="#viewQR" prefHeight="30.0" prefWidth="202.0" style="-fx-background-color: #FFFFFF;" text="View QR Code">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
                   <Separator prefWidth="200.0" style="-fx-background-color: #ffffff;" />
                   <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#openSettings" prefHeight="70.0" prefWidth="199.0" style="-fx-background-color: #FFFFFF;" text="Account Settings">
                      <font>
